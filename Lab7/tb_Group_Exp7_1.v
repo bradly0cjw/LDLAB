@@ -7,8 +7,6 @@ wire carry,sub;
 five_bit_adder_with_sub M0(A,B,S,sum,carry,c0,sub);
 initial #90 $finish;
 initial begin
-    // #0 A=5'b00010 ; B=5'b00011;
-    // S=1;
     // Group 1
     #10 A=5'b10111 ; B=5'b11000;
     c0=0;
@@ -33,7 +31,5 @@ initial begin
     S=0;
     #10 A=5'b10110; B=5'b11101;
     S=1;
-    // #10 A=5'b10110; B=5'b11101;
-    // S=0;
 end
 endmodule
