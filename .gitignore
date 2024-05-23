@@ -10,3 +10,7 @@ gitmemo.md
 HW2.7z
 !*.srcs/**/*.xdc
 .idea
+db/
+incremental_db/
+output_files/
+simulation/

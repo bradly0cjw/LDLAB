@@ -2,9 +2,9 @@ module D_FF_C(d, clk, clr, q);
     input d, clk,clr;
     output q;
     reg q;
-    // initial begin
-    //     q = 0;
-    // end
+    initial begin
+        q = 0;
+    end
     always @(posedge clk, negedge clr)
     begin
         if (~clr)
