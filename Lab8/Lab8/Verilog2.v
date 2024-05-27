@@ -20,10 +20,8 @@ module ring_and_Johnson_counter(input mode, load, clk, input [4:0] data, output 
         if (load)
             d <= data;
         else if (mode) // Johnson counter
-        // mod 10 counter
             d <= {d_out[3],d_out[2],d_out[1],d_out[0],dbar[4]};
         else // Ring counter
-        // mod 5 counter
             d <= {d_out[3],d_out[2],d_out[1],d_out[0],d_out[4]};
     end
 

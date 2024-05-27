@@ -18,14 +18,14 @@
 #
 # Quartus II 64-Bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-# Date created = 18:27:54  May 15, 2024
+# Date created = 22:04:29  May 27, 2024
 #
 # -------------------------------------------------------------------------- #
 #
 # Notes:
 #
 # 1) The default values for assignments are stored in the file:
-#		half_adder_assignment_defaults.qdf
+#		Group4_Exp7_1_assignment_defaults.qdf
 #    If this file doesn't exist, see file:
 #		assignment_defaults.qdf
 #
@@ -37,10 +37,10 @@
 
 
 set_global_assignment -name FAMILY "Cyclone IV E"
-set_global_assignment -name DEVICE EP4CE115F29C7
-set_global_assignment -name TOP_LEVEL_ENTITY half_adder
+set_global_assignment -name DEVICE EP4CE115F23C7
+set_global_assignment -name TOP_LEVEL_ENTITY five_bit_adder_with_sub
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
-set_global_assignment -name PROJECT_CREATION_TIME_DATE "18:27:54  MAY 15, 2024"
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:04:29  MAY 27, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
@@ -49,3 +49,13 @@ set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
 set_global_assignment -name NOMINAL_CORE_SUPPLY_VOLTAGE 1.2V
 set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name POWER_PRESET_COOLING_SOLUTION "23 MM HEAT SINK WITH 200 LFPM AIRFLOW"
+set_global_assignment -name POWER_BOARD_THERMAL_MODEL "NONE (CONSERVATIVE)"
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name VERILOG_FILE Verilog1.v
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "C:/Users/LINBEI/Documents/GitHub/NDHU/LDLAB/Lab7/lab7/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
