@@ -29,10 +29,10 @@ endmodule
 
 module five_bit_adder_with_sub(a,b,S,sum,carry,c0,sub);
     input [4:0] a,b;
-    input S;
+    input c0,S;
     output [4:0] sum;
     output carry;
-    input c0,sub;
+    output sub;
     wire ct;
     wire [4:0] c;
     wire c5;
