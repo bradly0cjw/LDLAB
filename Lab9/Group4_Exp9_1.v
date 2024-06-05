@@ -16,9 +16,9 @@ module decoder_4x16(inSwitch, outLED);
 output [15:0] outLED;
 input [3:0] inSwitch;
 wire [3:0]enable;
-decoder_2x4_gate G1 (outLED[3:0],inSwitch[1],inSwitch[0],enable[0]);
-decoder_2x4_gate G2 (outLED[7:4],inSwitch[1],inSwitch[0],enable[1]);
-decoder_2x4_gate G3 (outLED[11:8],inSwitch[1],inSwitch[0],enable[2]);
-decoder_2x4_gate G4 (outLED[15:12],inSwitch[1],inSwitch[0],enable[3]);
-decoder_2x4_gate G5 (enable,inSwitch[3],inSwitch[2],1'b1);
+decoder_2x4_gate G1 (outLED[3:0],inSwitch[0],inSwitch[1],enable[0]);
+decoder_2x4_gate G2 (outLED[7:4],inSwitch[0],inSwitch[1],enable[1]);
+decoder_2x4_gate G3 (outLED[11:8],inSwitch[0],inSwitch[1],enable[2]);
+decoder_2x4_gate G4 (outLED[15:12],inSwitch[0],inSwitch[1],enable[3]);
+decoder_2x4_gate G5 (enable,inSwitch[2],inSwitch[3],0'b0);
 endmodule
