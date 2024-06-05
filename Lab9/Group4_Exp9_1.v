@@ -20,5 +20,5 @@ decoder_2x4_gate G1 (outLED[3:0],inSwitch[1],inSwitch[0],enable[0]);
 decoder_2x4_gate G2 (outLED[7:4],inSwitch[1],inSwitch[0],enable[1]);
 decoder_2x4_gate G3 (outLED[11:8],inSwitch[1],inSwitch[0],enable[2]);
 decoder_2x4_gate G4 (outLED[15:12],inSwitch[1],inSwitch[0],enable[3]);
-decoder_2x4_gate G5 (enable,inSwitch[3],inSwitch[2],1);
+decoder_2x4_gate G5 (enable,inSwitch[3],inSwitch[2],1'b1);
 endmodule
